@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -17,15 +18,12 @@ import { ToastrModule } from 'ngx-toastr';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
     SharedModule,
-    ToastrModule.forRoot({  
- 
-      closeButton: true,  
-        
-    })
+    ToastrModule.forRoot()
   ],
   providers: [CepService],
   bootstrap: [AppComponent]

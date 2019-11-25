@@ -3,7 +3,7 @@
     Cadastro Dados Pessoais
   </h2>
 
-  <form [formGroup]="formDadosPessoais" (ngSubmit)="onSubmit()">
+  <form [formGroup]="formDadosPessoais" (ngSubmit)="onSubmit()" autocomplete="off">
     <div class="form-row">
       <div class="form-group col-md-3">
         <label for="nome">Nome</label>
